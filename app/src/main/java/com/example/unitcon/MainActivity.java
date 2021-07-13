@@ -46,12 +46,12 @@
 
     @Override
     public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
+            if (drawer.isDrawerOpen(GravityCompat.START)) {
+                drawer.closeDrawer(GravityCompat.START);
+            } else {
+                super.onBackPressed();
+            }
         }
-    }
 
         @Override
         public boolean onNavigationItemSelected( MenuItem item) {
@@ -83,6 +83,10 @@
                 case R.id.Feedback:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Feedback()).commit();
                     Toast.makeText(MainActivity.this, "Feedback", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.user_Packages:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PackagesFragment()).commit();
+                    Toast.makeText(MainActivity.this, "Packages", Toast.LENGTH_SHORT).show();
                     break;
 
 

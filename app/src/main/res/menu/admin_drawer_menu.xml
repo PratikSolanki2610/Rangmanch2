@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Event_Details"
+            android:icon="@drawable/ic_baseline_email_24"
+            android:title="Events Detail" />
+
+        <item
+            android:id="@+id/Add_Events"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="Add Events" />
+        <item
+            android:id="@+id/Update_Event"
+            android:icon="@drawable/ic_baseline_cancel_24"
+            android:title="Update Event">
+
+        </item>
+
+        <item
+            android:id="@+id/User_info"
+            android:icon="@drawable/ic_baseline_contacts_24"
+            android:title="User Info">
+
+        </item>
+
+        <item
+            android:id="@+id/Packges"
+            android:icon="@drawable/ic_baseline_feedback_24"
+            android:title="Packages">
+
+        </item>
+        <item
+            android:id="@+id/Logout"
+            android:icon="@drawable/ic_baseline_feedback_24"
+            android:title="Logout">
+
+        </item>
+
+
+
+    </group>
+
+</menu>

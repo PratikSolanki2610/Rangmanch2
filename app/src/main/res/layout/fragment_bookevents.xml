@@ -4,242 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:contextClickable="false">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Book Event"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.046" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:text="Event Title"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.103" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:text="No Of Guests"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.048"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-            app:layout_constraintVertical_bias="0.031" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="407dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="4dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingBottom="10dp"
-            android:text="Name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.072"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    android:contextClickable="false"
+    android:background="#D5D0D0">
 
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:text="Venue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.056"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
-            app:layout_constraintVertical_bias="0.047" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="406dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="4dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingBottom="10dp"
-            android:text="Name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="402dp"
-            android:layout_height="28dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingBottom="10dp"
-            android:text="Name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:text="Book Events"
+                         android:textSize="35dp"
+                         android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="64dp"
-            android:layout_height="20dp"
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Event Title"
+                         android:layout_marginTop="15dp"
+                         android:textSize="10dp"/>
 
-            android:text="Date"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-            app:layout_constraintVertical_bias="0.017" />
+                     <EditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                           />
 
-        <EditText
-            android:id="@+id/editTextDate2"
-            android:layout_width="410dp"
-            android:layout_height="35dp"
-            android:ems="10"
-            android:inputType="date"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6"
-            app:layout_constraintVertical_bias="0.0" />
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="No of Guest"
+                         android:layout_marginTop="15dp"
+                         android:textSize="10dp"/>
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Time"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.042"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextDate2"
-            app:layout_constraintVertical_bias="0.0" />
+                     <EditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                           />
 
-        <EditText
-            android:id="@+id/editTextTime2"
-            android:layout_width="407dp"
-            android:layout_height="22dp"
-            android:ems="10"
-            android:inputType="time"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.75"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8"
-            app:layout_constraintVertical_bias="0.031" />
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Venue"
+                         android:layout_marginTop="15dp"
+                         android:textSize="10dp"/>
 
-        <EditText
-            android:id="@+id/editTextTextMultiLine"
-            android:layout_width="402dp"
-            android:layout_height="25dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.111"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9"
-            app:layout_constraintVertical_bias="0.0" />
+                     <EditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                            />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Description  "
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.021"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTime2"
-            app:layout_constraintVertical_bias="0.03" />
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                             android:text="Choose Date (DD/MM/YY)"/>
+                     <EditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"/>
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Description"
+                         android:layout_marginTop="15dp"
+                         android:textSize="10dp"/>
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:height="140dp"/>
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Duration"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.019"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-            app:layout_constraintVertical_bias="0.058" />
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Event Title"
+                         android:layout_marginTop="15dp"
+                         android:textSize="10dp"/>
 
-        <EditText
-            android:id="@+id/editTextTextPersonName7"
-            android:layout_width="406dp"
-            android:layout_height="33dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10"
-            app:layout_constraintVertical_bias="0.0" />
+                     <EditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:height="100dp"   />
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Event Duration"
+                         android:layout_marginTop="15dp"
+                         android:textSize="10dp"/>
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Budget"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7"
-            app:layout_constraintVertical_bias="0.0" />
+                     <EditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName8"
-            android:layout_width="405dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="4dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.166"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                     </EditText>
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Budget"
+                     android:layout_marginTop="15dp"
+                     android:textSize="10dp"/>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add Event"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+                 <Button
+                     android:layout_marginTop="30dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="100dp"
+                     android:text="Book Event"
+                     android:background="@color/teal_200"
+                     android:id="@+id/eventbook"/>
+             </LinearLayout>
+
+        </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

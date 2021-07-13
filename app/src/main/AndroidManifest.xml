@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UnitCon">
-        <activity android:name=".HomePageActivity"></activity>
+        <activity android:name=".Admin_Packages"></activity>
+        <activity android:name=".Admin_AddEvent" />
+        <activity android:name=".AdminMainActivity" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".Selection" />
+        <activity android:name=".HomePageActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUpActivity">
             <intent-filter>
